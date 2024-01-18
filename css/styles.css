@@ -382,12 +382,13 @@ body {
 .hero {
     background-color: var(--first-color-text);
     padding: 188px 0;
-    display: flex;
+    
     justify-content: center;
     align-items: center;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)),
         url(../images/people-office.jpg);
+        width: 100%;
     max-width: 1440px;
     background-repeat: no-repeat;
     background-position: center;
@@ -500,7 +501,8 @@ img {
 }
 
 .container {
-    width: 1158px;
+    width:100%;
+    max-width: 1158px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -942,4 +944,84 @@ img {
 }
 .comment-label{
     margin-bottom: 16px;
+}
+
+
+/* Responsywność */
+html, body{
+    width: 100%;
+}
+body{
+    overflow-x: hidden;
+}
+
+.header {
+    display: none;
+}
+
+.mobile-menu-layout{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.mobile-menu-layout button{
+    background-color: transparent;
+}
+
+.js-menu-constainer {
+    display: none;
+}
+
+.js-menu-constainer .is-open {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--color-white);
+    flex-flow: column nowrap;
+}
+.mobile-nav .menu-list {
+display: flex;
+flex-flow: column nowrap;
+padding: 24px;
+gap:20px;
+}
+
+.mobile-nav .menu-list .link-active::after {
+    display: none;
+}
+
+.mobile-menu-close {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url("../images/people_bg@2x.jpg");
+    }
+}
+
+@media (min-width:480px) {
+
+}
+
+@media (min-width: 768px) {
+.header{
+    display: flex;
+}
+.mobile-menu-layout{
+    display: none;
+}
+}
+
+@media (min-width:1158px) {
+
 }
