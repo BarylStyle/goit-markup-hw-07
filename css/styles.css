@@ -71,8 +71,8 @@ body {
     list-style: none;
     text-decoration: none;
     display: flex;
-    align-items: center;
-    gap: 24px;
+    
+    gap: 72px;
 }
 .section-one-layout{
 flex-wrap: wrap;
@@ -133,6 +133,7 @@ flex-wrap: wrap;
     align-items: baseline;
     flex-wrap: wrap;
     justify-content: center;
+    gap:72px;
 }
 
 .logo-highlight {
@@ -360,11 +361,17 @@ flex-wrap: wrap;
 }
 
 .contakt-item {
-    color: var(--SLATE);
-    font-weight: 400;
+    color: var(--iris);
+    font-weight: 700;
+    font-size: 36px;
     display: block;
     margin-right: 50px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contakt-item-mail{
+    font-weight: 500;
+    font-size: 20px;
+
 }
 
 .contact-item:last-child {
@@ -513,17 +520,18 @@ img {
 
 .container {
     width:100%;
-    max-width: 1158px;
+    max-width: 480px;
     margin: 0 auto;
     padding: 0 15px;
 }
 
 .logo-paragraph {
-    margin-right: 120px;
+    
 }
 
 .link-padding {
-    padding: 24px 0;
+        font-size: 36px;
+            font-weight: 700;
 }
 
 .bottom {
@@ -536,6 +544,10 @@ img {
 
 .gap {
     gap: 40px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 295px;
+    
 }
 
 .footer-social-p {
@@ -549,7 +561,8 @@ img {
 
 .footer-social-links {
     display: flex;
-    gap: 16px;
+    gap: 56px;
+    justify-content: start;
 }
 
 .footer-social-link {
@@ -633,10 +646,11 @@ img {
 
 .customer-list {
     display: flex;
-    gap: 24px;
+    row-gap: 72px;
     list-style: none;
-    justify-content: space-evenly;
+    column-gap: 16px;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .li-customers {
@@ -672,6 +686,8 @@ img {
     color: var(--kolo4);
     position: relative;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        font-size: 36px;
+            font-weight: 700;
 }
 
 
@@ -785,7 +801,7 @@ img {
 }
 .form-label-input {
     gap: 24px;
-    width: 264px;
+    width: 398px;
     height: 40px;
     border: 1px solid var(--color-white);
     background-color: transparent;
@@ -973,8 +989,9 @@ html, body{
 
 .mobile-menu-layout{
     display: flex;
-    width: 100%;
+    width: 480px;
     justify-content: space-between;
+    margin: auto;
 
 }
 
@@ -1002,6 +1019,10 @@ button {
     transform: translateX(100%);
     transition: transform 250ms ease-in-out;
 }
+.mobile-js-menu-container{
+    display: flex;
+    flex-direction: column;
+}
 
 .js-menu-container.is-open {
     transform: translateX(0);
@@ -1009,9 +1030,9 @@ button {
 }
 .mobile-nav .menu-list {
 display: flex;
-flex-flow: column nowrap;
-padding: 24px;
-gap:20px;
+flex-direction: column;
+align-items: flex-start;
+gap:40px;
 }
 
 .mobile-nav .menu-list .link-active::after {
@@ -1025,6 +1046,10 @@ gap:20px;
     display: flex;
     width: 100%;
     justify-content: flex-end;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+
 }
 
 @media (min-device-pixel-ratio: 2),
@@ -1068,6 +1093,12 @@ gap:20px;
     flex-basis: calc((100% - 120px) / 3);
     width: calc((100% - 120px) / 6);
     height: 88px;
+}
+.container {
+    width: 100%;
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 }
 
@@ -1123,6 +1154,90 @@ gap:20px;
     background-color: var(--kolo4);
     border-radius: 2px;
     width: 100%;
+}
+.container {
+    
+    max-width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.logo {
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--iris);
+    font-style: normal;
+    margin-right: 76px;
+    padding: 24px 0;
+    margin-left: 16px;
+}
+.logo-paragraph {
+    margin-right: 120px;
+}
+.form-label-input {
+    gap: 24px;
+    width: 264px;
+    height: 40px;
+    border: 1px solid var(--color-white);
+    background-color: transparent;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    padding-left: 16px;
+    color: var(--color-white);
+}
+.customer-list {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+    
+}
+.nav-link {
+    color: var(--kolo4);
+    position: relative;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    font-weight: 500;
+    font-size: 16px;
+}
+.link-padding {
+    padding: 24px 0;
+    font-weight: 500;
+        font-size: 16px;
+
+}
+.footer-social-links {
+    display: flex;
+    gap: 16px;
+}
+.contakt-item {
+    color: var(--SLATE);
+    font-weight: 400;
+    display: block;
+    margin-right: 50px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    font-weight: 400;
+        font-size: 16px;
+}
+.menu-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    position: relative;
+    color: #404bbf;
+}
+.gap {
+    gap:40px;
+}
+.li-customers {
+    flex-basis: calc((100% - 120px) / 6);
+    height: 88px;
 }
 
 }
