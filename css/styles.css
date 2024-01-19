@@ -547,6 +547,7 @@ img {
     display: flex;
     flex-direction: column;
     margin-top: 295px;
+    margin-left: 40px;
     
 }
 
@@ -999,11 +1000,22 @@ html, body{
     background-color: transparent;
     
 }
-button {
+.js-close-menu {
     cursor: pointer;
     border: none;
     border-radius: 50%;
+    width: 24px;
+        height: 24px;
+        background-color: transparent;
+        border: 1px solid #E7E9FC;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         
+}
+.js-open-menu{
+    cursor: pointer;
+        border: none;
 }
 
 .js-menu-container {
@@ -1033,6 +1045,7 @@ display: flex;
 flex-direction: column;
 align-items: flex-start;
 gap:40px;
+margin-left: 40px;
 }
 
 .mobile-nav .menu-list .link-active::after {
@@ -1042,6 +1055,7 @@ gap:40px;
     display: flex;
         gap: 56px;
         justify-content: start;
+        margin-left: 40px;
     
 }
 
@@ -1090,12 +1104,13 @@ gap:40px;
 }
 .customer-list {
     justify-content: center;
+    column-gap: 24px;
    
 }
 .li-customers {
-    flex-basis: calc((100% - 120px) / 3);
-    width: calc((100% - 120px) / 6);
+    flex-basis: unset;
     height: 88px;
+    width: 168px;
 }
 .container {
     width: 100%;
@@ -1130,6 +1145,7 @@ gap:40px;
 .nav-link{
     font-weight: 500;
     font-size: 16px;
+    padding: 24px 0;
 }
 .link-padding{
     font-weight: 500;
@@ -1137,6 +1153,7 @@ gap:40px;
 }
 .gap{
     margin-top: auto;
+    gap:12px;
 }
 .contakt-item{
     font-size: 12px;
@@ -1152,6 +1169,10 @@ gap:40px;
     background-color: var(--kolo4);
     border-radius: 2px;
     width: 100%;
+}
+.all-footer{
+    padding-left: 108px;
+    justify-content: unset;
 }
 }
 
