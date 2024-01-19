@@ -104,7 +104,7 @@ flex-wrap: wrap;
 }
 
 .advantages-title {
-    font-size: 20px;
+    font-size: 36px;
     margin-bottom: 8px;
     text-align: center;
 }
@@ -283,7 +283,7 @@ flex-wrap: wrap;
 
 .first-section-h {
     font-weight: 700;
-    font-size: 56px;
+    font-size: 50px;
     line-height: 1.07;
     text-align: center;
     letter-spacing: 0.02em;
@@ -382,6 +382,8 @@ flex-wrap: wrap;
     color: var(--iris);
     font-style: normal;
     margin-right: 76px;
+        padding: 24px 0;
+        margin-left: 16px;
 }
 
 .hero {
@@ -496,7 +498,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 24px;
+    gap: 72px;
     list-style: none;
 }
 
@@ -672,16 +674,7 @@ img {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-link::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -1px;
-    height: 4px;
-    background-color: var(--kolo4);
-    border-radius: 2px;
-    width: 100%;
-}
+
 
 .modal-window {
     position: fixed;
@@ -982,10 +975,17 @@ html, body{
     display: flex;
     width: 100%;
     justify-content: space-between;
+
 }
 
 .mobile-menu-layout button{
     background-color: transparent;
+    
+}
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
 }
 
 .js-menu-container {
@@ -1004,6 +1004,7 @@ html, body{
 
 .js-menu-container.is-open {
     transform: translateX(0);
+    background-color: var(--color-white);
 }
 .mobile-nav .menu-list {
 display: flex;
@@ -1014,6 +1015,9 @@ gap:20px;
 
 .mobile-nav .menu-list .link-active::after {
     display: none;
+}
+.mobile-social-media-menu{
+    
 }
 
 .mobile-menu-close {
@@ -1085,6 +1089,7 @@ gap:20px;
 }
 .team-list{
     flex-wrap: nowrap;
+    gap: 24px;
 }
 .footer-form {
     margin-bottom: 16px;
@@ -1102,6 +1107,21 @@ gap:20px;
     align-items: baseline;
     flex-wrap: wrap;
     justify-content: center;
+}
+.advantages-title {
+    font-size: 20px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+.nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 4px;
+    background-color: var(--kolo4);
+    border-radius: 2px;
+    width: 100%;
 }
 
 }
