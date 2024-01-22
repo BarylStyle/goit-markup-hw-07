@@ -407,6 +407,7 @@ flex-wrap: wrap;
     background-position: center;
     background-size: cover;
     margin: auto;
+    padding: 112px 0;
 }
 
 .hero-content {
@@ -1315,6 +1316,10 @@ gap:40px;
 }
 .footer-social-p{
     text-align: start;
+}
+
+.hero{
+    padding: 188px 0;
 }
 
 }
